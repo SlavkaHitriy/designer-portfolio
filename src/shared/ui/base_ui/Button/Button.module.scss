@@ -1,0 +1,54 @@
+.button {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: $background-primary;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  $this: &;
+  transition: background-color .3s, color .3s;
+  
+  &:hover {
+    background-color: #191919;
+    color: $background-primary;
+
+    #{$this}__arrow-wrapper {
+      width: 28px;
+      margin-left: 8px;
+
+      svg {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &:focus {
+    #{$this}__arrow-wrapper {
+      width: 0;
+      margin-left: 0;
+
+      svg {
+        transform: translateX(50px);
+      }
+    }
+  }
+
+  &__arrow-wrapper {
+    height: 0;
+    display: flex;
+    align-items: center;
+    width: 0;
+    transition: width .3s, margin-left .3s;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      transform: translateX(50px);
+      transition: transform .3s;
+    }
+  }
+}

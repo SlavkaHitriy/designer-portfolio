@@ -23,7 +23,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/core/styles/shared/variables.scss";`
+        additionalData: `
+        @import "@/core/styles/shared/variables.scss";
+        @import "@/core/styles/shared/mixins.scss";
+        `
       }
     }
   }

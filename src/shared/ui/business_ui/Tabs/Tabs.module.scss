@@ -1,0 +1,33 @@
+.tabs {
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-self: center;
+  gap: 4px;
+  border-radius: 14px;
+  box-shadow: 4px 4px 8.8px rgba(30, 30, 30, 0.15);
+  backdrop-filter: blur(24px);
+  background: linear-gradient(261deg, #EEEEEE 0%, #CDCDD9 100%);
+  padding: 8px;
+
+  &__item {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #DBDBDB;
+    background: $background-primary;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+
+    &--disabled {
+      background: #F3F3F3;
+      color: #B0B0B0;
+    }
+  }
+}

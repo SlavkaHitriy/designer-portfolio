@@ -1,0 +1,11 @@
+@mixin heading1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 61px;
+}
+
+@mixin heading2 {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 45px;
+}
