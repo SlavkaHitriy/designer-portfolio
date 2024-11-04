@@ -1,4 +1,4 @@
-.tabs {
+.navigation {
   position: fixed;
   bottom: 75px;
   left: 50%;
@@ -16,8 +16,9 @@
   &__item {
     padding: 12px;
     border-radius: 10px;
+    background: #F3F3F3;
+    color: #B0B0B0;
     border: 1px solid #DBDBDB;
-    background: $background-primary;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -25,9 +26,8 @@
     font-size: 14px;
     font-weight: 600;
 
-    &--disabled {
-      background: #F3F3F3;
-      color: #B0B0B0;
+    &--active {
+      background: $background-primary;
     }
   }
 }

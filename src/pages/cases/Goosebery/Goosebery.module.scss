@@ -1,0 +1,183 @@
+.goosebery {
+  padding: 80px 0 160px;
+  background-color: $background-primary;
+  $this: &;
+
+  svg {
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__heading {
+    &--2 {
+      @include heading2;
+
+      & + #{$this}__heading--4 {
+        margin-top: 36px;
+      }
+    }
+
+    &--3 {
+      @include heading3;
+
+      & + #{$this}__body--1 {
+        margin-top: 36px;
+      }
+    }
+
+    &--4 {
+      @include heading4;
+
+      & + #{$this}__body--1 {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__body {
+    b {
+      font-weight: 700;
+    }
+
+    &--1 {
+      @include body1;
+
+      & + & {
+        margin-top: 24px;
+      }
+
+      & + #{$this}__heading--3 {
+        margin-top: 32px;
+      }
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+
+    &--semibold {
+      font-weight: 600;
+    }
+
+    &--subtitle {
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    gap: 24px;
+
+    &-left {
+      min-width: 250px;
+    }
+  }
+
+  &__graph-image {
+    margin-top: 36px;
+  }
+
+  &__prototype-image {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  &__flow-image {
+    margin-top: 32px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 40px;
+
+    &-wrapper {
+      flex-grow: 1;
+    }
+
+    &-title {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.228px;
+      margin-bottom: 24px;
+    }
+
+    &-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 8px;
+    }
+
+    &-item {
+
+    }
+  }
+
+  &__item {
+    &--white {
+      background-color: $background-secondary;
+      padding: 40px 0;
+    }
+  }
+
+  &__white {
+    &-title {
+      margin-bottom: 36px;
+    }
+
+    &-content {
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+    }
+
+    &-item {
+      max-width: 285px;
+      width: 100%;
+    }
+  }
+
+  &__vision {
+    &-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 80px;
+    }
+
+    &-item {
+      img {
+        max-height: 450px;
+      }
+    }
+  }
+
+  &__testing {
+    &-images {
+      display: flex;
+      gap: 116px;
+      margin-top: 80px;
+    }
+
+    &-title {
+      margin-bottom: 32px;
+      text-align: center;
+      line-height: 22px;
+    }
+
+    &-wrapper {
+      display: flex;
+      gap: 48px;
+
+      img {
+        max-width: calc(50% - 24px);
+      }
+    }
+  }
+}

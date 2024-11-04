@@ -13,4 +13,8 @@ body {
   padding: 0 25px;
   margin: 0 auto;
   width: 100%;
+
+  &--small {
+    max-width: 1090px;
+  }
 }

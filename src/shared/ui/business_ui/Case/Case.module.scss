@@ -1,0 +1,39 @@
+.case {
+  padding: 70px 0;
+  background: linear-gradient(241deg, #71B59A 0%, #F8FA9D 101.29%);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    padding-right: 80px;
+    flex: 1;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include heading2;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 570px;
+    margin-bottom: 48px;
+  }
+
+  &__image {
+    width: 283px;
+    border: 8px solid #E3E3E3;
+    box-shadow: 8px 8px 16px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+  }
+}
