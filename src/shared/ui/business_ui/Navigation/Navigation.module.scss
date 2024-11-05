@@ -1,6 +1,6 @@
 .navigation {
   position: fixed;
-  bottom: 75px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -16,18 +16,27 @@
   &__item {
     padding: 12px;
     border-radius: 10px;
-    background: #F3F3F3;
-    color: #B0B0B0;
-    border: 1px solid #DBDBDB;
+    color: $text-secondary;
+    fill: $text-secondary;
+    background: $background-tertiary;
+    border: 1px solid $card-stroke;
     display: flex;
     flex-direction: column;
     gap: 12px;
     min-width: 100px;
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
+    transition: background-color .15s, color .15s, fill .15s;
+
+    &:hover {
+      background: $background-secondary;
+    }
 
     &--active {
-      background: $background-primary;
+      color: $text-black;
+      fill: $text-black;
+      background: $background-secondary;
     }
   }
 }

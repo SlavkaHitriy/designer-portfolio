@@ -10,11 +10,17 @@ export const Navigation = () => {
 
   return (
     <div className={bem()}>
-      <NavLink to={ROUTES.HOME} className={bem('item')}>
+      <NavLink
+        to={ROUTES.HOME}
+        className={({ isActive }) => bem('item', isActive ? 'active' : '')}
+      >
         <WorkIcon />
         Home
       </NavLink>
-      <NavLink to={ROUTES.CASES.GOOSEBERRY} className={bem('item', 'disabled')}>
+      <NavLink
+        to={ROUTES.CASES.GOOSEBERRY}
+        className={({ isActive }) => bem('item', isActive ? 'active' : '')}
+      >
         <AboutIcon />
         About
       </NavLink>

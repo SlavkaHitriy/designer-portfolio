@@ -18,7 +18,7 @@ export const cases: ICase[] = [
     title: 'Increasing customer retention rate',
     subtitle: 'Gooseberry',
     description:
-      'Integrating a new event feature that resulted in a 23% growth in customer retention.',
+      'Integrating a new event feature that resulted in a 17% growth in customer retention.',
     buttonText: 'View case study',
     image: {
       src: phone,
