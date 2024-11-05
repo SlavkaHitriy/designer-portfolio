@@ -9,8 +9,8 @@
   gap: 4px;
   border-radius: 14px;
   box-shadow: 4px 4px 8.8px rgba(30, 30, 30, 0.15);
-  backdrop-filter: blur(24px);
-  background: linear-gradient(261deg, #EEEEEE 0%, #CDCDD9 100%);
+  backdrop-filter: blur(12px);
+  background: linear-gradient(261deg, rgba(#EEEEEE, .5) 0%, rgba(#CDCDD9, .5) 100%);
   padding: 8px;
 
   &__item {
