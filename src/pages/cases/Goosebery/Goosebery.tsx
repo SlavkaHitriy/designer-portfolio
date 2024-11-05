@@ -138,12 +138,74 @@ export const Goosebery: React.FC = () => {
               <div className={bem('cards-wrapper')}>
                 <h5 className={bem('cards-title')}>Problem</h5>
                 <div className={bem('cards-inner')}>
+                  <div className={bem('cards-item', 'red')}>
+                    Users experience stress during relocation or travel, making
+                    it harder to focus on forming connections.
+                  </div>
+                  <div className={bem('cards-item', 'red')}>
+                    Users, especially those new to an area or in transit,
+                    struggle to build relationships and adapt to their new
+                    surroundings quickly.
+                  </div>
+                  <div className={bem('cards-item', 'red')}>
+                    Users face difficulty transitioning from virtual
+                    introductions to in-person meet-ups.
+                  </div>
+                  <div className={bem('cards-item', 'red')}>
+                    Absence of a clear, accessible path to move from online
+                    connections to real-world interactions without awkwardness
+                    or hassle.
+                  </div>
+                  <div className={bem('cards-item', 'red')}>
+                    Absence of a smooth way to establish a local support
+                    network, meet like-minded people, and access relevant
+                    information.
+                  </div>
                   <div className={bem('cards-item')}>
-                    <p className={bem('cards-description')}>
-                      Users experience stress during relocation or travel,
-                      making it harder to focus on forming connections.
-                    </p>
-                    <div className={bem('cards-author')}>Alex</div>
+                    Users have-stress periods of relocation or travel, while
+                    they expect an experience that not only encourages, but
+                    sustains them.
+                  </div>
+                </div>
+              </div>
+              <div className={bem('cards-wrapper')}>
+                <h5 className={bem('cards-title')}>Research Goals</h5>
+                <div className={bem('cards-inner', 'big')}>
+                  <div className={bem('cards-item', 'yellow')}>
+                    Identify the specific types of stressors users experience
+                    during relocation or travel, and how these impact their
+                    ability to socialize and engage with new people.
+                  </div>
+                  <div className={bem('cards-item', 'yellow')}>
+                    What are the most common challenges faced by users in
+                    relocation or high-stress travel scenarios?
+                  </div>
+                  <div className={bem('cards-item', 'yellow')}>
+                    Discover the most effective ways to help users establish
+                    quick, meaningful connections, especially for those new to
+                    an area.
+                  </div>
+                  <div className={bem('cards-item')}>
+                    How do users currently try to establish connections or find
+                    local information during transition periods?
+                  </div>
+                  <div className={bem('cards-item', 'yellow')}>
+                    What criteria do users consider most important when deciding
+                    to connect with others (e.g., shared interests, location,
+                    similar background)?
+                  </div>
+                  <div className={bem('cards-item', 'yellow')}>
+                    How quickly do users expect to meet others when they join
+                    the app, and what would an ideal timeline look like?
+                  </div>
+                  <div className={bem('cards-item', 'yellow')}>
+                    Understand the challenges users face in converting virtual
+                    introductions into real-world meetings and explore features
+                    that could ease this transition.
+                  </div>
+                  <div className={bem('cards-item')}>
+                    What prevent users from moving from virtual interactions to
+                    in-person meet-ups?
                   </div>
                 </div>
               </div>

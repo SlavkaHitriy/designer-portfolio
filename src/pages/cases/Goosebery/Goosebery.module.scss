@@ -110,16 +110,31 @@
       line-height: 150%;
       letter-spacing: -0.228px;
       margin-bottom: 24px;
+      text-align: center;
     }
 
     &-inner {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 8px;
+
+      &--big {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
     &-item {
+      padding: 12px;
+      font-size: 10px;
+      line-height: 14px;
+      background-color: #E6E6E6;
+      box-shadow: 1px 5px 12px rgba(0 0 0 / 15%);
+      min-height: 137px;
+      max-width: 137px;
 
+      &--red {
+        background-color: #FFAFA3;
+      }
     }
   }
 
