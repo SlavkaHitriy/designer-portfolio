@@ -13,6 +13,10 @@
     gap: 80px;
   }
 
+  &__pt-serif {
+    font-family: $font-pt-serif;
+  }
+
   &__heading {
     &--2 {
       @include heading2;
@@ -140,6 +144,7 @@
     &-item {
       max-width: 285px;
       width: 100%;
+      font-family: $font-pt-serif;
     }
   }
 

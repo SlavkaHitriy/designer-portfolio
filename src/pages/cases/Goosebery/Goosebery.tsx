@@ -34,13 +34,18 @@ export const Goosebery: React.FC = () => {
             className={classNames(bem('item'), 'container', 'container--small')}
           >
             <h2 className={bem('heading', '2')}>Product</h2>
-            <p className={bem('heading', '4')}>
+            <p className={classNames(bem('heading', '4'), bem('pt-serif'))}>
               — Gooseberry: an app for people looking to make new connections,
               whether in their local area or while traveling, as well as helping
               users better and faster acclimate to their living environment, and
               stay in touch with friends and acquaintances.
             </p>
-            <p className={bem('body', ['1', 'italic'])}>
+            <p
+              className={classNames(
+                bem('body', ['1', 'italic']),
+                bem('pt-serif')
+              )}
+            >
               To comply with my non-disclosure agreement, I have omitted and
               obfuscated confidential information in this case study. All
               information in this case study is my own and does not necessarily
@@ -65,7 +70,7 @@ export const Goosebery: React.FC = () => {
                   31% of Gooseberry users are dropping off the app 1.5 month
                   after the initial setup.
                 </h3>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   To comply with my non-disclosure agreement, I have omitted and
                   obfuscated confidential information in this case study. All
                   information in this case study is my own and does not
@@ -91,7 +96,7 @@ export const Goosebery: React.FC = () => {
                 MY ROLE AND TEAM
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   I worked on a team with 2 designers, the product owners,
                   managers and engineering team, and was responsible for the
                   visual part of the design as well as conducting researches to
@@ -115,7 +120,7 @@ export const Goosebery: React.FC = () => {
                 USER RESEARCH
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   As a team we conducted qualitative research to gather insights
                   and validate our assumptions. Through card sorting, the team
                   and I outlined the main problem and research objectives. I
@@ -163,12 +168,12 @@ export const Goosebery: React.FC = () => {
                   or travel, while users expect an experience that not only
                   encourages, but sustains them.
                 </h3>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   A significant portion of Gooseberry users, particularly those
                   who are new to a living area or traveling, find it difficult
                   to establish meaningful connections quickly.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Despite the app's aim to foster new relationships and help
                   users acclimate to their environment, many users struggle to
                   convert virtual introductions into real-world connections.
@@ -226,15 +231,15 @@ export const Goosebery: React.FC = () => {
                 HOW MIGHT WE?
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   <b>HMW</b> help users convert virtual introductions into
                   real-world connections?
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   <b>HMW</b> build an environment that encourages long-term
                   connection rather than just initial interaction?
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   <b>HMW</b> support users in sustaining relationships even as
                   they travel or relocate?
                 </p>
@@ -255,7 +260,7 @@ export const Goosebery: React.FC = () => {
                 SUCCESS METRICS
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Our main metric was retention rate one and a half month after
                   installing the app. We expected the retention rate to increase
                   by at least 10%.
@@ -300,19 +305,19 @@ export const Goosebery: React.FC = () => {
                 PROTOTYPING
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Based on our research, we knew that it was not enough for
                   users to establish connections through chats, let alone
                   meaningful interactions.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Moreover, getting to know someone in a new city or town seemed
                   overwhelming, and the majority of users pointed to the fact
                   that direct interaction with other users nearby would help
                   acclimatize and socialize faster, which would have a generally
                   positive impact on mental health.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Taking the things above into consideration, I figured out that
                   we should not primarily tie communication to chats and
                   restrict users from having a real conversation. Giving an
@@ -328,19 +333,19 @@ export const Goosebery: React.FC = () => {
                 <div className={bem('prototype-image')}>
                   <PrototypeIcon />
                 </div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   I’ve build some sketches to visualize how the flow might look
                   to users. When producing the flow, it was crucial to make it
                   as simple as possible, so that users can quickly find what’s
                   they were missing.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Besides that, I’ve come up with an idea that{' '}
                   <b>we should not limit users to just personal events</b>{' '}
                   because there could be a high risk users would just make a few
                   interactions and never come back again.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   So I decided that we could complete the overall picture with
                   events from organizations. In that way users would be more
                   engaged with the app, in particular, book organization events.
@@ -376,13 +381,13 @@ export const Goosebery: React.FC = () => {
                 VISION
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   We aimed to make user experience as streamlined as possible so
                   that users could swiftly search for the events. We added a
                   primary button next to the search field so it was always in
                   front of their eyes.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   At the same time, users could explore all events at a glance.
                   To make them easy to browse and not look overwhelming, I
                   decided to display them like cards with a short and clear
@@ -418,7 +423,7 @@ export const Goosebery: React.FC = () => {
                 USER TESTING
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Before finilizing the vision, we had a concern that we might
                   have troubles with handling personal event requests because
                   users didn’t want just anyone to meet or visit their house, to
@@ -430,13 +435,13 @@ export const Goosebery: React.FC = () => {
                     test to a group of our customers.
                   </b>
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Users could easily get offended or frustrated by receiving
                   constant rejections so I made a decision that we should
                   communicate the event join message in a different way so that
                   users didn’t blame themselves if they were denied.
                 </p>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Moreover, to prevent one user from getting numerous requests
                   to join an event and other users from getting their hopes up,
                   I suggested that the number of remaining seats should be
@@ -489,7 +494,7 @@ export const Goosebery: React.FC = () => {
                 RESULTS
               </h4>
               <div>
-                <p className={bem('body', '1')}>
+                <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   After the experiment we saw first positive results and
                   realized the event feature was worth investing more time and
                   effort. In the end, we decided to proceed with the variation
