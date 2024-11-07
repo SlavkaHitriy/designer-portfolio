@@ -5,16 +5,18 @@ import classNames from 'classnames';
 
 interface IMainLayoutProps extends PropsWithChildren {
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export const MainLayout: React.FC<IMainLayoutProps> = ({
   className,
-  children
+  children,
+  style
 }) => {
   const bem = createBem('layout', styles);
 
   return (
-    <div className={classNames(bem(), className)}>
+    <div style={style} className={classNames(bem(), className)}>
       <div className={classNames(bem('container'), 'container')}>
         {children}
       </div>

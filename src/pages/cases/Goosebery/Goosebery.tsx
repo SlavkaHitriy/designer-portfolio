@@ -15,6 +15,7 @@ import testing1 from '@shared/assets/images/testing-1.png';
 import testing2 from '@shared/assets/images/testing-2.png';
 import testing3 from '@shared/assets/images/testing-3.png';
 import testing4 from '@shared/assets/images/testing-4.png';
+import preview from '@shared/assets/videos/preview.mp4';
 
 export const Goosebery: React.FC = () => {
   const location = useLocation();
@@ -410,7 +411,7 @@ export const Goosebery: React.FC = () => {
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   So I decided that we could complete the overall picture with
                   events from organizations. In that way users would be more
-                  engaged with the app, in particular, book organization events.
+                  engaged with the app, in particular, book organization events.{' '}
                   <b>
                     Additionally, by attracting organizations to the app, we
                     would significantly expand the number of users and potential
@@ -452,7 +453,7 @@ export const Goosebery: React.FC = () => {
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   At the same time, users could explore all events at a glance.
                   To make them easy to browse and not look overwhelming, I
-                  decided to display them like cards with a short and clear
+                  decided to display them as cards with short and clear
                   information inside. Users could effortlessly scan the page and
                   find something to their liking. Additionally, we provided
                   users with multiple sorting options.
@@ -468,6 +469,7 @@ export const Goosebery: React.FC = () => {
                     <img src={vision3} alt="vision screenshot" />
                   </div>
                 </div>
+                <video className={bem('video')} src={preview} controls />
               </div>
             </div>
           </div>
@@ -566,6 +568,41 @@ export const Goosebery: React.FC = () => {
                   After rolling it out to 100% of users, we’ve got 17% increase
                   in customer retention.
                 </h3>
+              </div>
+            </div>
+          </div>
+
+          <div className={classNames('footer', bem('footer'))}>
+            <div
+              className={classNames(
+                bem('footer-inner'),
+                'container',
+                'container--small'
+              )}
+            >
+              <div className={bem('footer-item')}>
+                <h5 className={bem('footer-title')}>Location</h5>
+                <p className={bem('footer-text')}>Kyiv, Ukraine</p>
+              </div>
+              <div className={bem('footer-item')}>
+                <h5 className={bem('footer-title')}>Telegram</h5>
+                <a
+                  href={'https://t.me/Lannox01'}
+                  className={bem('footer-text')}
+                  target={'_blank'}
+                >
+                  @Lannox01
+                </a>
+              </div>
+              <div className={bem('footer-item')}>
+                <h5 className={bem('footer-title')}>Contact</h5>
+                <a
+                  href={'mailto:gula31052001@gmail.com'}
+                  className={bem('footer-text')}
+                  target={'_blank'}
+                >
+                  gula31052001@gmail.com
+                </a>
               </div>
             </div>
           </div>

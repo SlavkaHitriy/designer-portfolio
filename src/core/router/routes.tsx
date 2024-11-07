@@ -3,6 +3,7 @@ import { ROUTES } from './routes.const.ts';
 import { Home } from '@pages/Home';
 import { Goosebery } from '@pages/cases/Goosebery';
 import { Layout } from '@shared/ui/business_ui/Layout';
+import { SwiftFlow } from '@pages/cases/SwiftFlow';
 
 export const routes = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.CASES.GOOSEBERRY,
         element: <Goosebery />
+      },
+      {
+        path: ROUTES.CASES.SWIFTFLOW,
+        element: <SwiftFlow />
       }
     ]
   }

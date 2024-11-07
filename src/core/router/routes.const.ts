@@ -1,6 +1,7 @@
 export const ROUTES = {
   HOME: '/',
   CASES: {
-    GOOSEBERRY: '/case/gooseberry'
+    GOOSEBERRY: '/case/gooseberry',
+    SWIFTFLOW: '/case/swiftflow'
   }
 };

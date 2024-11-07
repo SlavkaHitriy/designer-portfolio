@@ -15,12 +15,19 @@ export const Case: React.FC<ICaseProps> = ({
   subtitle,
   description,
   buttonText,
-  page
+  isWhiteText,
+  page,
+  gradient
 }) => {
   const bem = createBem('case', styles);
 
   return (
-    <MainLayout className={bem()}>
+    <MainLayout
+      style={{
+        background: gradient
+      }}
+      className={bem('', isWhiteText ? 'white-text' : '')}
+    >
       <div className={bem('inner')}>
         <div className={bem('content')}>
           <h5 className={bem('subtitle')}>{subtitle}</h5>
@@ -29,7 +36,10 @@ export const Case: React.FC<ICaseProps> = ({
           {!page && <Button to={`case/${id}`}>{buttonText}</Button>}
         </div>
         <img
-          className={bem('image')}
+          className={bem('image', [
+            image.withShadow ? 'with-shadow' : '',
+            image.className
+          ])}
           src={image.src}
           alt={image.alt}
           title={image.alt}

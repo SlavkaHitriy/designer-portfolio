@@ -1,13 +1,15 @@
 .case {
   padding: 70px 0;
-  background: linear-gradient(241deg, #71B59A 0%, #F8FA9D 101.29%);
+
+  &--white-text {
+    color: $background-secondary;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 36px;
-    padding-right: 80px;
+    gap: 130px;
     flex: 1;
   }
 
@@ -32,9 +34,19 @@
   }
 
   &__image {
-    width: 283px;
-    border: 8px solid #E3E3E3;
-    box-shadow: 8px 8px 16px rgba(30, 30, 30, 0.15);
-    border-radius: 30px;
+    &--with-shadow {
+      border: 8px solid #E3E3E3;
+      box-shadow: 8px 8px 16px rgba(30, 30, 30, 0.15);
+      border-radius: 30px;
+    }
+
+    &--gooseberry {
+      width: 283px;
+    }
+
+    &--swiftflow {
+      max-width: 628px;
+      width: 100%;
+    }
   }
 }
