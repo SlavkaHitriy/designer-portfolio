@@ -75,6 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color .15s;
 
     @media (width <= 767px) {
       position: static;
@@ -84,6 +85,7 @@
 
     svg {
       animation: arrowAnimation 1.5s infinite;
+      transition: color .15s;
 
       @keyframes arrowAnimation {
         0% {
@@ -95,6 +97,14 @@
         100% {
           transform: translateY(0);
         }
+      }
+    }
+
+    &:hover {
+      background-color: $text-black;
+
+      svg {
+        color: $background-secondary;
       }
     }
   }

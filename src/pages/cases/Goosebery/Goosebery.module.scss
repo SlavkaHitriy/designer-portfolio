@@ -308,12 +308,33 @@
       flex-direction: column;
       gap: 24px;
       text-align: center;
+      align-items: center;
     }
 
     &-title {
       font-size: 18px;
       font-weight: 600;
       line-height: 22px;
+    }
+
+    a {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: $text-black;
+        left: 0;
+        bottom: 4px;
+      }
+
+      &:hover {
+        &::after {
+          height: 0;
+        }
+      }
     }
 
     &-text {

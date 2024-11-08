@@ -2,6 +2,8 @@ import { MainLayout } from '@shared/ui/base_ui/MainLayout';
 import styles from './About.module.scss';
 import { createBem } from '@shared/lib/bem';
 import avatar from '@shared/assets/images/avatar.png';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '@core/router';
 
 export const About: React.FC = () => {
   const bem = createBem('about', styles);
@@ -9,7 +11,9 @@ export const About: React.FC = () => {
   return (
     <>
       <MainLayout className={bem()}>
-        <h1 className={bem('title')}>Oleksandr Hula</h1>
+        <h1 className={bem('title')}>
+          <Link to={ROUTES.HOME}>Oleksandr Hula</Link>
+        </h1>
         <div className={bem('inner')}>
           <img className={bem('avatar')} src={avatar} alt="oleksandr photo" />
           <div className={bem('info')}>

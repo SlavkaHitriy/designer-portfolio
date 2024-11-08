@@ -1,7 +1,7 @@
 .about {
   background-color: $background-primary;
-  padding: 48px 0;
-  height: 100vh;
+  padding: 48px 0 160px;
+  min-height: 100vh;
 
   &__title {
     font-size: 28px;
@@ -15,7 +15,7 @@
 
   &__inner {
     display: flex;
-    gap: 44px;
+    gap: 60px;
     max-width: 900px;
     margin: 0 auto;
 

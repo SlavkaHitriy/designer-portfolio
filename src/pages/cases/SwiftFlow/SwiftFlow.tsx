@@ -286,7 +286,7 @@ export const SwiftFlow: React.FC = () => {
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   At the same time, we provided the clients with an opportunity
                   to manage price setup for the course SKUS via a click based on
-                  a course category not to manually put a discount percantage
+                  a course category not to manually put a discount percentage
                   for every single SKU separately.
                 </p>
               </div>
@@ -304,7 +304,7 @@ export const SwiftFlow: React.FC = () => {
                     bem('testing-title')
                   )}
                 >
-                  From
+                  FROM
                 </h5>
                 <h6
                   className={classNames(
