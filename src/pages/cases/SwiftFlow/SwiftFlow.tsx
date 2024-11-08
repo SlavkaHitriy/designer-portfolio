@@ -390,7 +390,7 @@ export const SwiftFlow: React.FC = () => {
                 <h5 className={bem('footer-title')}>Telegram</h5>
                 <a
                   href={'https://t.me/Lannox01'}
-                  className={bem('footer-text')}
+                  className={bem('footer-text', 'underline')}
                   target={'_blank'}
                 >
                   @Lannox01

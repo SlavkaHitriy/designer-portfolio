@@ -280,7 +280,11 @@
   &__video {
     width: 100%;
     max-height: 500px;
-    margin-top: 48px;
+    margin-top: 80px;
+
+    @media (width <= 767px) {
+      margin-top: 40px;
+    }
   }
 
   &__footer {
@@ -317,31 +321,31 @@
       line-height: 22px;
     }
 
-    a {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        background-color: $text-black;
-        left: 0;
-        bottom: 4px;
-      }
-
-      &:hover {
-        &::after {
-          height: 0;
-        }
-      }
-    }
-
     &-text {
       font-family: $font-pt-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 32px;
+
+      &--underline {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          background-color: $text-black;
+          left: 0;
+          bottom: 4px;
+        }
+
+        &:hover {
+          &::after {
+            height: 0;
+          }
+        }
+      }
     }
   }
 }
