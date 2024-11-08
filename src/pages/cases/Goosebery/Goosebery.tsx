@@ -72,10 +72,10 @@ export const Goosebery: React.FC = () => {
                   after the initial setup.
                 </h3>
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
-                  To comply with my non-disclosure agreement, I have omitted and
-                  obfuscated confidential information in this case study. All
-                  information in this case study is my own and does not
-                  necessarily reflect the views of Gooseberry.
+                  A notable segment of Gooseberry users experience a decline in
+                  engagement after their initial interactions with the app,
+                  indicating potential gaps in the app’s ongoing engagement
+                  strategies.
                 </p>
               </div>
             </div>

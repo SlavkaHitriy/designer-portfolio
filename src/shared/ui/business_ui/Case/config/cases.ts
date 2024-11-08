@@ -39,7 +39,7 @@ export const cases: ICase[] = [
     title: 'Simplifying Customer Price Setup',
     subtitle: 'SwiftFlow',
     description:
-      'Accelerating training course price setup for customer portal users from 1 day to 20 minutes',
+      'Accelerating training course price setup for customer portal users from 1 day to 5 minutes',
     buttonText: 'View case study',
     image: {
       className: 'swiftflow',

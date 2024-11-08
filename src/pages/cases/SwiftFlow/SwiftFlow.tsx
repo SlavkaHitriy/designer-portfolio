@@ -46,7 +46,7 @@ export const SwiftFlow: React.FC = () => {
               To comply with my non-disclosure agreement, I have omitted and
               obfuscated confidential information in this case study. All
               information in this case study is my own and does not necessarily
-              reflect the views of Gooseberry.
+              reflect the views of SwiftFlow.
             </p>
           </div>
 
@@ -230,13 +230,11 @@ export const SwiftFlow: React.FC = () => {
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   Based on our investigation, we knew there was a gap between
                   course categories and SKUS that didn’t allow for quick
-                  management, as one category could include a ton of of SKUS
-                  which ultimately made it difficult to set a single price. SKUS
-                  are dependant on a course category which enabled us to relate
-                  SKUS to a specific category, so they are a single entity.
+                  management, as one category could include a ton of SKUS which
+                  ultimately made it difficult to set a single price.
                 </p>
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
-                  I’ve figured out that to decrese that gap, we could make SKUS
+                  I’ve figured out that to decrease that gap, we could make SKUS
                   dependant on a course category which would enable us to relate
                   SKUS to a specific category so they are a single entity.
                 </p>
@@ -245,7 +243,7 @@ export const SwiftFlow: React.FC = () => {
                   layout for the design to be consistent with the first part of
                   the platform. Looking at the solutions we had in the first
                   release I saw that we can slightly adjust the table without
-                  overhauling the design by adding expandable/collapsible
+                  overhauling the design by adding expandable / collapsible
                   element to include SKUS into a category.
                 </p>
                 <div className={bem('prototype-image')}>
@@ -341,8 +339,8 @@ export const SwiftFlow: React.FC = () => {
                   Automatic setup by category
                 </h6>
                 <div className={bem('testing-wrapper')}>
-                  <img src={testing3} alt="testing screenshot" />
                   <img src={testing4} alt="testing screenshot" />
+                  <img src={testing3} alt="testing screenshot" />
                 </div>
               </div>
             </div>
