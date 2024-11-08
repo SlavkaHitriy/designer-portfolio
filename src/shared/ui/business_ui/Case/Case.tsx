@@ -3,6 +3,8 @@ import styles from './Case.module.scss';
 import { Button } from '@shared/ui/base_ui/Button';
 import { MainLayout } from '@shared/ui/base_ui/MainLayout';
 import { ICase } from './config/cases.ts';
+import ArrowDown from '@shared/assets/icons/arrow-down.svg';
+import React from 'react';
 
 interface ICaseProps extends ICase {
   page?: boolean;
@@ -19,10 +21,19 @@ export const Case: React.FC<ICaseProps> = ({
   page,
   gradient
 }) => {
+  const caseRef = React.useRef<HTMLDivElement>(null);
   const bem = createBem('case', styles);
+
+  const scrollDown = () => {
+    window.scrollTo({
+      top: caseRef.current?.offsetHeight,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <MainLayout
+      ref={caseRef}
       style={{
         background: gradient
       }}
@@ -34,6 +45,15 @@ export const Case: React.FC<ICaseProps> = ({
           <h2 className={bem('title')}>{title}</h2>
           <p className={bem('description')}>{description}</p>
           {!page && <Button to={`case/${id}`}>{buttonText}</Button>}
+          {page && (
+            <button
+              type={'button'}
+              className={bem('scroll-down')}
+              onClick={scrollDown}
+            >
+              <ArrowDown />
+            </button>
+          )}
         </div>
         <img
           className={bem('image', [

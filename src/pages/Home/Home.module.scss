@@ -7,6 +7,11 @@
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 240px;
+
+      @media (width <= 767px) {
+        margin-bottom: 80px;
+        font-size: 24px;
+      }
     }
 
     &-title {
@@ -17,6 +22,11 @@
       flex-direction: column;
       gap: 24px;
       max-width: 720px;
+
+      @media (width <= 767px) {
+        font-size: 36px;
+        line-height: 48px;
+      }
     }
   }
 }

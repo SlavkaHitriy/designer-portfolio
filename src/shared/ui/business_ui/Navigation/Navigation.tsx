@@ -13,6 +13,8 @@ export const Navigation = () => {
 
   React.useEffect(() => {
     const footer = document.querySelector('.footer');
+    navigation.current?.removeAttribute('style');
+
     const handleScroll = () => {
       if (navigation.current && footer) {
         const footerTop = footer.getBoundingClientRect().top;
@@ -47,7 +49,7 @@ export const Navigation = () => {
         Home
       </NavLink>
       <NavLink
-        to={ROUTES.CASES.GOOSEBERRY}
+        to={ROUTES.ABOUT}
         className={({ isActive }) => bem('item', isActive ? 'active' : '')}
       >
         <AboutIcon />

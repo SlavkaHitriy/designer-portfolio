@@ -17,12 +17,13 @@ body {
   &--small {
     max-width: 1090px;
   }
+
+  @media (width <= 480px) {
+    padding: 0 15px;
+  }
 }
 
 a {
   color: inherit;
-  
-  &:hover {
-    text-decoration: none;
-  }
+  text-decoration: none;
 }

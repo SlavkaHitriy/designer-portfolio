@@ -4,6 +4,7 @@ import { Home } from '@pages/Home';
 import { Goosebery } from '@pages/cases/Goosebery';
 import { Layout } from '@shared/ui/business_ui/Layout';
 import { SwiftFlow } from '@pages/cases/SwiftFlow';
+import { About } from '@pages/About';
 
 export const routes = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.HOME,
         element: <Home />
+      },
+      {
+        path: ROUTES.ABOUT,
+        element: <About />
       },
       {
         path: ROUTES.CASES.GOOSEBERRY,
