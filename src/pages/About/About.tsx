@@ -28,10 +28,12 @@ export const About: React.FC = () => {
               middle product designer at Brizo FoodMetrics, a Canadian company.
             </p>
             <p className={bem('text')}>
-              My main focus is on creating and enhancing easy-to-use solutions
-              in a balance between business goals and people’s needs. I’m
-              passionate about researches, product and team growth, and crafting
-              stunning visuals and experience that change the world.
+              My main focus is on creating stunning and easy-to-use solutions in
+              a balance between business goals and people’s needs. I am not a
+              fan of making decisions for the sake of making decisions or ‘it is
+              to be simply done’. At the same time, I try to immerse myself in
+              the problem to understand ‘why do we need it and why it should be
+              done this way’. The smallest details can be game-changers.
             </p>
             <p className={bem('text')}>
               When not at work, you can find me fishing (and sometimes playing

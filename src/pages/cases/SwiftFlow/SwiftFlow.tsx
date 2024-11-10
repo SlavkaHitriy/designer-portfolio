@@ -72,9 +72,9 @@ export const SwiftFlow: React.FC = () => {
                   Price setup is the key revenue drivers for SwiftFlow.
                 </p>
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
-                  When a contract changes, the company currently has to manually
-                  adjust the daily rate for individual courses per customer.
-                  With multiple negotiated rates and discounts based on course
+                  When a contract changes, the company has to manually adjust
+                  the daily rate for individual courses per customer. With
+                  multiple negotiated rates and discounts based on course
                   categories, updating prices efficiently across multiple
                   courses for each client is overwhelmingly challenging.
                 </p>
@@ -279,9 +279,10 @@ export const SwiftFlow: React.FC = () => {
                   We aimed to make user experience as streamlined as possible so
                   that clients could swiftly assign prices for a specific
                   customer based on a course category and that price change
-                  would automatically allocated to that category. We added a new
-                  subpage to the existing company creation flow so the clients
-                  could manage things related to their customers at a time.
+                  would be automatically allocated to that category. We added a
+                  new subpage to the existing company creation flow so the
+                  clients could manage things related to their customers at a
+                  time.
                 </p>
                 <p className={classNames(bem('body', '1'), bem('pt-serif'))}>
                   At the same time, we provided the clients with an opportunity

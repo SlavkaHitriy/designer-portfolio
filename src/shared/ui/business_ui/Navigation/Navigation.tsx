@@ -1,4 +1,4 @@
-import WorkIcon from '@shared/assets/icons/work.svg';
+import HomeIcon from '@shared/assets/icons/home.svg';
 import AboutIcon from '@shared/assets/icons/about.svg';
 import { createBem } from '@shared/lib/bem';
 import styles from './Navigation.module.scss';
@@ -45,7 +45,7 @@ export const Navigation = () => {
         to={ROUTES.HOME}
         className={({ isActive }) => bem('item', isActive ? 'active' : '')}
       >
-        <WorkIcon />
+        <HomeIcon />
         Home
       </NavLink>
       <NavLink
