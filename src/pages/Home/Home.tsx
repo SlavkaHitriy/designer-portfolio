@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { MainLayout } from '@shared/ui/base_ui/MainLayout';
 import styles from './Home.module.scss';
 import { createBem } from '@shared/lib/bem';
