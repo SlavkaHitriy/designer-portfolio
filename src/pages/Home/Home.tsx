@@ -6,23 +6,25 @@ import styles from './Home.module.scss';
 import { createBem } from '@shared/lib/bem';
 import { cases } from '@shared/ui/business_ui/Case/config/cases.ts';
 import { Case } from '@shared/ui/business_ui/Case';
-import React, { useEffect } from 'react';
+import React from 'react';
 import p5 from 'p5';
 
 export const Home: React.FC = () => {
   const sketchRef = React.useRef(null);
   const bem = createBem('home', styles);
 
-  useEffect(() => {
+  React.useLayoutEffect(() => {
     const sketch = (p) => {
       const deg = (a) => (p.PI / 180) * a;
       const rand = (v1, v2) => Math.floor(v1 + Math.random() * (v2 - v1));
 
       const Particles = [];
       let time = 0;
+      const particlesCount =
+        sketchRef.current.offsetWidth / 500 > 1 ? 1000 : 100;
       const opt = {
-        particles: window.innerWidth / 500 > 1 ? 1000 : 500,
-        noiseScale: 0.009,
+        particles: particlesCount,
+        noiseScale: 0.5,
         angle: (p.PI / 180) * -90,
         h1: rand(0, 360),
         h2: rand(0, 360),
@@ -35,10 +37,18 @@ export const Home: React.FC = () => {
       };
 
       p.setup = () => {
-        p.createCanvas(p.windowWidth, p.windowHeight);
+        p.createCanvas(
+          sketchRef.current.offsetWidth,
+          sketchRef.current.offsetHeight
+        );
         for (let i = 0; i < opt.particles; i++) {
           Particles.push(
-            new Particle(p.random(p.width), p.random(p.height), p, opt)
+            new Particle(
+              p.random(p.width) + p.random(-5, 5),
+              p.random(p.height) + p.random(-5, 5),
+              p,
+              opt
+            )
           );
         }
         p.strokeWeight(opt.strokeWeight);
@@ -48,21 +58,19 @@ export const Home: React.FC = () => {
         time++;
 
         p.clear();
-        p.background(0, 0, 0, 0); // Adjust alpha for trail length control
+        p.background(0, 0, 0, 0);
 
         Particles.forEach((particle) => {
           particle.update();
           particle.render();
         });
-
-        // Particles.forEach((particle) => {
-        //   particle.update();
-        //   particle.render();
-        // });
       };
 
       p.windowResized = () => {
-        p.resizeCanvas(p.windowWidth, p.windowHeight);
+        p.resizeCanvas(
+          sketchRef.current.offsetWidth,
+          sketchRef.current.offsetHeight
+        );
       };
 
       p.mouseClicked = () => {
@@ -85,8 +93,8 @@ export const Home: React.FC = () => {
           this.y = y;
           this.lx = x;
           this.ly = y;
-          this.vx = 0;
-          this.vy = 0;
+          this.vx = p.random(-3, 1); // Random initial x-velocity
+          this.vy = p.random(-3, 1); // Random initial y-velocity
           this.ax = 0;
           this.ay = 0;
           this.randomize();
@@ -97,7 +105,7 @@ export const Home: React.FC = () => {
           this.hue = this.hueSemen > 0.5 ? 20 + this.opt.h1 : 20 + this.opt.h2;
           this.sat = this.hueSemen > 0.5 ? this.opt.s1 : this.opt.s2;
           this.light = this.hueSemen > 0.5 ? this.opt.l1 : this.opt.l2;
-          this.maxSpeed = this.hueSemen > 0.5 ? 3 : 2;
+          this.maxSpeed = this.hueSemen > 0.5 ? 2 : 1;
         }
 
         update() {
@@ -145,8 +153,7 @@ export const Home: React.FC = () => {
 
         render() {
           this.p.stroke(`hsla(${this.hue}, ${this.sat}%, ${this.light}%, 0.5)`);
-          this.p.line(this.x, this.y, this.lx, this.ly);
-          this.updatePrev();
+          this.p.point(this.x, this.y);
         }
       }
     };
