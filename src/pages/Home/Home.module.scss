@@ -2,6 +2,9 @@
   &__greetings {
     padding: 48px 0 74px;
     background-color: $background-primary;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
 
     &-subtitle {
       font-size: 28px;
