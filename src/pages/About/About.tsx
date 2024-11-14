@@ -24,8 +24,8 @@ export const About: React.FC = () => {
               practices in research and human-centered design.
             </p>
             <p className={bem('text')}>
-              I grew up in Brovary, Ukraine and is currently working for as a
-              middle product designer at Brizo FoodMetrics, a Canadian company.
+              I grew up in Brovary, Ukraine and is currently working as a middle
+              product designer at Brizo FoodMetrics, a Canadian company.
             </p>
             <p className={bem('text')}>
               My main focus is on creating stunning and easy-to-use solutions in
